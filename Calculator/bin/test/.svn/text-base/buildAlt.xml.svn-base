@@ -1,0 +1,29 @@
+<project name="Test" default="run" basedir=".">
+<description>Builds, tests, and runs the project Test.</description>
+
+<!-- setze properties und tstamp -->
+<target name="init">
+<tstamp/>
+<property name="srcDir" value="../../bin/test"/>
+<property name="classDir" value="../../build/classes/test"/>
+</target>
+
+<!-- loesche die Ergebnisse alter Ant-Aufrufe -->
+<target name="clean" depends="init">
+<delete dir="${classDir}"/>
+<mkdir dir="${classDir}"/>
+</target>
+
+<!-- uebersetze -->
+<target name="compile" depends="clean">
+<javac srcdir="${srcDir}" destdir="${classDir}"/>
+</target>
+
+<!-- ausfuehren -->
+<target name="run" depends="compile">
+<java classname="Main">
+<classpath path="${classDir}"/>
+</java>
+</target>
+
+</project> 

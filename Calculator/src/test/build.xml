@@ -1,0 +1,53 @@
+<!--
+<property name="build" location="build"/>
+<property name="dist" location="dist"/>
+ 
+<path id="classpath">
+  <pathelement location="${build}" />
+</path>
+ 
+<target name="junit" depends="dist">
+  <mkdir dir="${report.dir}"/>
+  <junit printsummary="yes">
+    <classpath>
+      <path refid="classpath"/>
+      <path refid="application"/>
+      <fileset dir="lib">
+        <include name="**/*.jar"/>
+      </fileset>
+    </classpath>
+ 
+    <formatter type="xml"/>
+ 
+    <batchtest fork="yes" todir="${report.dir}">
+      <fileset dir="${src}" includes="**/*Test.java"/>
+    </batchtest>
+  </junit>
+</target>
+-->
+
+<project default="test">
+
+	<property name="src" value="./" />
+	<property name="lib" value="./" />
+	<property name="classes" value="./" />
+	<property name="test.class.name" value="../../test.CalculatorTest" />
+
+	<path id="test.classpath">
+		<pathelement location="${classes}" />
+		<pathelement location="./junit.jar" />
+		<fileset dir="${lib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="test">
+		<echo> "${srcdir}" </echo>
+		<junit fork="yes" haltonfailure="yes">
+			<test name="${test.class.name}" />
+			<formatter type="plain" usefile="false" />
+			<classpath refid="test.classpath" />
+		</junit>
+	</target>
+</project>
+	

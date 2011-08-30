@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/TestProject/!svn/ver/17/trunk/Calculator
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/TestProject/!svn/ver/7/trunk/Calculator/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/TestProject/!svn/ver/7/trunk/Calculator/.project
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/TestProject/!svn/ver/7/trunk/Calculator/build.xml
+END

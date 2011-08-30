@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/TestProject/!svn/ver/17/trunk/Calculator/src/test
+END
+buildAlt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/TestProject/!svn/ver/7/trunk/Calculator/src/test/buildAlt.xml
+END
+junit-4.9b3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/TestProject/!svn/ver/7/trunk/Calculator/src/test/junit-4.9b3.jar
+END
+Main.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/TestProject/!svn/ver/17/trunk/Calculator/src/test/Main.java
+END
+Calculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/TestProject/!svn/ver/17/trunk/Calculator/src/test/Calculator.java
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/TestProject/!svn/ver/13/trunk/Calculator/src/test/build.xml
+END
